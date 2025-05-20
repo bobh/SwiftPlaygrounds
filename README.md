@@ -68,7 +68,7 @@ You can create your own custom story for Morse code playback using agentic AI to
 ### **Generating a New Story**
 Use an AI assistant like ChatGPT or Copilot to generate a text-based story with the following prompt:
 "Compose an original 200 to 300-word story in UTF-8 ASCII text format on the topic of Morse Code or Amateur Radio.
-The story should be a **plain text file** without special characters or formatting".
+The story should be a **plain text file** without special characters or formatting. Do not include quotation marks, colons and semicolons in the story".
 
 ### **Adding the Story to `story.txt`**
 1. **Copy the AI-generated story** into a new text file.
