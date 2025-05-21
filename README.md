@@ -42,6 +42,16 @@ Swift Playgrounds is a free app from the iPad app store
    - Tap **Run** to start the app.
    - Use the **Play/Stop** button to toggle Morse code playback.
    - Adjust **WPM slider** to modify playback speed dynamically.
+  
+And this is the AI's Setup Instructions:
+## 🚀 How to Use MorseTrainer in Swift Playgrounds (iPad)
+
+1. Tap the green **Code** button above, then tap **Download ZIP**.
+2. Open the **Files** app on your iPad.
+3. Unzip the downloaded `.zip` file.
+4. Tap the `.swiftpm` project folder to open it in Swift Playgrounds 4.
+5. Run the app and start learning Morse code!
+
 
 ## NOTE 1: 
 When you select the MorsePlayer app and it loads at start up, wait for a while
