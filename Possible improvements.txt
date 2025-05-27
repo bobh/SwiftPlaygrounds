@@ -1,0 +1,62 @@
+Possible improvements you can make:
+
+  🤔  0. After you make a copy of this Playground (Duplicate), use SwiftUI       to improve the looks of the screen. For example, add more Padding       to the top of the Play button. The colors are jarring--change           them.
+         Here's how: 
+         https://developer.apple.com/tutorials/swiftui
+     
+ If the stories become boring or you start to memorize them, generate new stories with an AI app like ChatGPT. Use this prompt:
+
+"Compose an original 200 to 300-word story in UTF-8 ASCII text format on the topic of Morse Code or Amateur Radio. The story should be a plain text file without special characters or formatting. Do not include quotation marks, colons and semicolons in the story. Use amateur radio Q codes when appropriate"
+
+Then replace the text in one of the three story files in the Resouces Section with the AI generated story. The new story will be played 1/3 of the time when you start the Playground.
+_________________________
+
+  🔊 1. Adjustable Tone Frequency
+  
+  Let the user select the tone frequency (e.g. 400 Hz to 1200 Hz) to match their hearing comfort or training goals. • UI: Add a Slider or a Stepper in the settings section. • Effect: Update the freq dynamically. • Challenge: You’ll need to rebuild the tone buffer with the new frequency each time.
+  
+  ⸻
+  
+  ✍️ 2. Copy Practice Mode (Interactive Typing Test)
+  
+  Add a “Copy Mode” where users type what they hear in real time and get scored. • UI: TextField for input, score shown below. • Logic: • Compare typed input to storyText. • Highlight correct/incorrect characters. • Track WPM and accuracy. • Challenge: Syncing user typing with playback timing.
+  
+  ⸻
+  
+  🎯 3. Segment Playback
+  
+  Allow playback of only selected sentences or characters. • UI: Add a list or buttons for sentence/paragraph navigation. • Use Case: Users can focus on one section of a long story.
+  
+  ⸻
+  
+  📊 4. Statistics Dashboard
+  
+  Display: • Time spent practicing. • Characters played. • Accuracy (if in copy mode). • Average WPM speed used. • Storage: Use UserDefaults for lightweight data storage.
+  
+  ⸻
+  
+  🎧 5. Headphone Mode with Stereo Panning
+  
+  Add a feature to pan Morse tones left/right gradually for concentration training. • API: AVAudioEnvironmentNode or pan on AVAudioMixerNode.
+  
+  ⸻
+  
+  🌙 6. Dark Mode Enhancements • Adjust background/highlight colors to improve readability in dark environments. • Optional sepia or amber-on-black “night” mode for eye comfort.
+  
+  ⸻
+  
+  🕹️ 7. Game Mode / Contest Simulation
+  
+  Simulate contests like ARRL Sweepstakes: • Random call signs, serial numbers. • Timer-based scoring. • Fast-paced short messages.
+  
+  ⸻
+  
+  📂 8. User-Added Stories
+  
+  Let users drop custom .txt files into the Resources folder (or import via Share Sheet on iPadOS). • Bonus: Save favorite stories or tag them for difficulty.
+  
+  ⸻
+  
+  🧪 9. Real-Time Oscilloscope (Debug Panel)
+  
+  Show waveform of current tone for educational/demo purposes. • View: Use SwiftUI Canvas or MetalKit for visualization. • Data Source: Stream from AVAudioEngine’s tap.
